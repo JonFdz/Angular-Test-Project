@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cmp-databinding-assignment-start": {
+    "services-assignment-start": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cmp-databinding-assignment-start",
+            "outputPath": "dist/services-assignment-start",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cmp-databinding-assignment-start:build:production"
+              "buildTarget": "services-assignment-start:build:production"
             },
             "development": {
-              "buildTarget": "cmp-databinding-assignment-start:build:development"
+              "buildTarget": "services-assignment-start:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "cmp-databinding-assignment-start:build"
+            "buildTarget": "services-assignment-start:build"
           }
         },
         "test": {
